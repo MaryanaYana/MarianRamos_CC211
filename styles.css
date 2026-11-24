@@ -1,0 +1,65 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+body { background: #ffe6f0; color: #333; line-height: 1.6; }
+
+.navbar { 
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 50px; background: white; position: sticky; top: 0; z-index: 100;
+}
+.logo { color: #d63384; font-weight: bold; font-size: 24px; }
+.nav-links { display: flex; list-style: none; gap: 25px; }
+.nav-links a { text-decoration: none; color: #333; font-weight: 500; }
+.nav-links a:hover { color: #ec4899; }
+.menu-toggle { display: none; font-size: 28px; cursor: pointer; }
+
+.hero { 
+    display: flex; align-items: center; gap: 40px; padding: 60px 50px;
+    background: #ffe6f0;
+}
+.circle-logo { 
+    width: 150px; height: 150px; border-radius: 50%;
+    background: linear-gradient(45deg, #8b5cf6, #ec4899); 
+    display: flex; align-items: center; justify-content: center; 
+    font-size: 50px; color: white; font-weight: bold; font-style: italic;
+    flex-shrink: 0;
+}
+
+.section-title { text-align: center; color: #d63384; margin: 50px 0 30px; font-size: 28px; }
+
+.about-container, .cert-container { 
+    display: flex; gap: 30px; padding: 0 50px; justify-content: center; align-items: center;
+}
+.about-container p { flex: 1; font-size: 16px; }
+.about-container img, .cert img { max-width: 300px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+
+.cert { text-align: center; flex: 1; max-width: 400px; }
+.cert h3 { color: #d63384; margin: 10px 0; }
+
+.contact-container { 
+    display: flex; gap: 40px; padding: 0 50px; max-width: 1000px; margin: auto;
+}
+.contact-info { flex: 1; }
+.contact-form { flex: 1; display: flex; flex-direction: column; gap: 10px; }
+input, textarea { padding: 12px; border: 1px solid #ccc; border-radius: 8px; }
+button { 
+    background: #ec4899; color: white; padding: 12px; border: none; 
+    border-radius: 8px; cursor: pointer; font-weight: bold; 
+}
+button:hover { background: #d63384; }
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar { padding: 15px 20px; }
+    .menu-toggle { display: block; }
+    .nav-links { 
+        display: none; flex-direction: column; position: absolute; 
+        top: 60px; right: 0; background: white; width: 100%; padding: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .nav-links.active { display: flex; }
+
+    .hero { flex-direction: column; text-align: center; padding: 40px 20px; }
+    .about-container, .cert-container, .contact-container { 
+        flex-direction: column; padding: 20px; 
+    }
+    .circle-logo { width: 120px; height: 120px; font-size: 40px; }
+}
