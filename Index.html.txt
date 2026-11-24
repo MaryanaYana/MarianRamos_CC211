@@ -1,0 +1,106 @@
+!DOCTY<PE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marian Ramos | Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="portfolio" aria-label="Marian Ramos personal website">
+    <header class="site-header">
+      <a class="brand" href="#home">MARIAN</a>
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#achievements">Achievement</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="welcome" id="home">
+      <div class="monogram" aria-label="Marian's monogram">MR</div>
+      <div class="welcome-copy">
+        <p class="eyebrow">HELLO, I'M MARIAN</p>
+        <h1>Welcome to my<br>Personal Website!</h1>
+        <p>A little space to share my journey, interests, and achievements.</p>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-copy">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2>About me</h2>
+        <p>I'm Marian V. Ramos, 21 years old, and a student from Polytechnic University of the Philippines. I enjoy learning new things, creating, and growing through every experience.</p>
+      </div>
+      <div class="portrait" role="img" aria-label="Illustrated portrait of Marian">
+        <svg viewBox="0 0 140 170" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="140" height="170" fill="#f2d8dc"/>
+          <path d="M28 170c3-34 16-52 42-52s39 18 42 52" fill="#24354a"/>
+          <path d="M54 113h32v28H54z" fill="#e8b69f"/>
+          <ellipse cx="70" cy="65" rx="29" ry="37" fill="#e7b99f"/>
+          <path d="M40 65c-2-29 12-48 32-48 22 0 33 17 29 48l-7-17c-14 4-30 1-43-8-1 12-4 20-11 25z" fill="#26232a"/>
+          <path d="M57 75c3 2 6 2 9 0m9 0c3 2 6 2 9 0" fill="none" stroke="#754d45" stroke-width="2" stroke-linecap="round"/>
+          <path d="M63 93c5 4 10 4 15 0" fill="none" stroke="#a45f61" stroke-width="2" stroke-linecap="round"/>
+          <path d="M52 127l18 18 18-18" fill="#fff"/>
+          <path d="M63 145l7-8 7 8-7 18z" fill="#d4a94f"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="achievements section" id="achievements">
+      <div class="section-heading">
+        <p class="eyebrow">MILESTONES</p>
+        <h2>My Achievements</h2>
+      </div>
+      <div class="certificate-grid">
+        <article class="achievement-card">
+          <div class="certificate certificate-one" aria-label="Certificate of participation illustration">
+            <span class="seal">✦</span>
+            <small>POLYTECHNIC UNIVERSITY</small>
+            <strong>Certificate</strong>
+            <span class="certificate-line"></span>
+            <span class="certificate-line short"></span>
+            <span class="signature">Marian Ramos</span>
+          </div>
+          <h3>Certificate 1</h3>
+          <p>Recognized for participation and dedication.</p>
+        </article>
+        <article class="achievement-card">
+          <div class="certificate certificate-two" aria-label="Certificate of achievement illustration">
+            <span class="seal">✧</span>
+            <small>AWARD OF EXCELLENCE</small>
+            <strong>Achievement</strong>
+            <span class="certificate-line"></span>
+            <span class="certificate-line short"></span>
+            <span class="signature">M. V. Ramos</span>
+          </div>
+          <h3>Certificate 2</h3>
+          <p>A proud moment in my learning journey.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-intro">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Contact me</h2>
+        <p>Have a question or want to say hello? Send me a message.</p>
+      </div>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="3" placeholder="Write your message..." required></textarea>
+        <button type="submit">Send message <span aria-hidden="true">→</span></button>
+        <p class="form-status" id="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <footer>MADE WITH CARE <span>•</span> MARIAN V. RAMOS</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
